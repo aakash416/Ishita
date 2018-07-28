@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+       <script src="js/javascript.js"></script>
+<style>
+    input {
+        padding: 10px;
+    }
+    button{
+        padding: 10px;
+        background: teal;
+        color: white;
+        border: none;
+        outline: none;
+    }
+</style>
+</head>
+<body>
+<!--	<div class="container">
+		<h1>1 Write a function to return a string that contains random lowercase alphabetic characters where the length must be equal to the value of the parameter. The second parameter contains an array of letters to omit.</h1>
+	</div>
+<script>
+        var randomString= function(length){
+            var text = "";
+            var possible ="abcdefghijklmnopqrstuvwxyz";
+            for(var i = 0; i <length; i++){
+                text += possible.charAt(Math.floor(Math.random()*possible.length));
+            }
+            return text;
+        }
+        var rs =randomString(8);
+        console.log("our Random String Is:"+rs);
+    </script>
+</script>
+-->
+<h1>2. Write a function that accepts a string The function takes the last digit of the ASCII code and returns a string of digits sorted in ascending order </h1>
+<div>
+    <input type="text" id="text">
+    <button id="buttion">Ascii code Ascending order</button>
+</div>
+<div id="output"></div>
+<script>
+    var buttion=document.getElementByid('buttion');
+    var output=document.getElementByid('output');
+    button.addEventListener('click', function(){
+        var text= document.getElementByid('text').value;
+        document.getElementByid('text').value='';
+        var ucstring =upperCaseString(text);
+        output.innerText=ucstring;
+    });
+</script>
+
+
+
+
+</body>
+</html>

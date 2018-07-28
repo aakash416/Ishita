@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<script>
+		var randomString= function(length){
+			var text = "";
+			var possible ="abcdefghijklmnopqrstuvwxyz";
+			for(var i = 0; i <length; i++){
+				text += possible.charAt(Math.floor(Math.random()*possible.length));
+			}
+			return text;
+		}
+		var rs =randomString(8);
+		console.log("our Random String Is:"+rs);
+	</script>
+</head>
+<body>
+
+<p id="foo">hi</p>
+
+</body>
+</html>
